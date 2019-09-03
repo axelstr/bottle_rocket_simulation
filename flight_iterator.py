@@ -15,6 +15,11 @@ class FlightIterator():
     def get_path_coordinates(self):
         return self.x_coordinates, self.y_coordinates, self.t_coordinates
 
+    def get_ground_distance(self):
+        first_negative_y_index = np.argmax(self.y_coordinates < 0)
+        flight_length = self.x_coordinates[first_negative_y_index]
+        return flight_length
+
     """
     Iterates given the initial conditions until the rocket has reached the ground.
     The x-, y- and t-coordinates are stored in the class fields.
