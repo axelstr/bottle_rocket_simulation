@@ -1,4 +1,4 @@
-# BottleRocketSimulator
+# Bottle rocket simulator
 Simulates the path of a bottle rocket given initial parameters. The purpose of the project is to optimize parameters and estimate the flight length of a built bottle rocket, see `Bottle_Rocket_Estimation.pdf`.
 
 ## Prerequisites
